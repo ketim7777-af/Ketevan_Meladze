@@ -1,0 +1,6 @@
+num = int(input("Enter number:"))
+print("Positive:", num > 0)
+print("Negative:", num < 0)
+print("Zero:", num == 0)
+print("Even", num % 2 == 0)
+print ("Odd", num % 2 != 0 )
