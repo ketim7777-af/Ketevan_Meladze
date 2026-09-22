@@ -8,6 +8,6 @@ if cart_total >= 50 or is_vip:
 else:
     print("You have to pay for shiping.")
 if not is_guest and promo_code == entered_promo_code:
-    print(f"10% discount was applied. Final total price {cart_total*0.9:.2f}")
+    print(f"10% discount was applied. Final total price ${cart_total*0.9:.2f}")
 else:
-    print(f"Discount was not applied. Final total price {cart_total:.2f}")
+    print(f"Discount was not applied. Final total price ${cart_total:.2f}")
