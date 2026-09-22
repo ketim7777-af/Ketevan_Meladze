@@ -1,0 +1,11 @@
+correct_pin = 5555
+balance = 506.2
+requested_ammount = 300
+entered_pin = int(input("Enter your pin:"))
+if correct_pin == entered_pin:
+    if requested_ammount <= balance:
+        print(f"Withdrawal succsesful! Remaining balance ${balance - requested_ammount:.2f}.")
+    else:
+        print("Ammout of your balane is not enough.") 
+else:
+    print("Incorrect PIN. Access Denied.")
