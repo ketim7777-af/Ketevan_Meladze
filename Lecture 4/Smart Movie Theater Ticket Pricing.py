@@ -1,4 +1,4 @@
-age = 20
+age = int(input("Enter your age:"))
 if age >= 65:
     print("Your ticket price is $10")
 elif age >= 13:
