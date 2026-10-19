@@ -1,15 +1,15 @@
 
-# import csv
+import csv
 
-# try:
-#     with open("ssl_companies.csv", "r",  newline="",) as file:
-#         reader = csv.DictReader(file)
+try:
+    with open("ssl_companies.csv", "r",  newline="",) as file:
+        reader = csv.DictReader(file)
 
-#         for row in reader:
-#             if int(row["Number of employees"]) > 1000:
-#                 print(row)
-# except:
-#     print("File did not found.")
+        for row in reader:
+            if int(row["Number of employees"]) > 1000:
+                print(row)
+except:
+    print("File did not found.")
 
 import csv
 
