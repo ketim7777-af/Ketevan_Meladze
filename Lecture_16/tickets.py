@@ -9,7 +9,7 @@ class MovieTicket:
         self.price = price
            
     def add_ticket_nums(self, ticket_num):
-        MovieTicket.total_tickets_sold += 1      
+        MovieTicket.total_tickets_sold += ticket_num      
         
     def display(self):
             
@@ -33,7 +33,7 @@ ticket_2.display()
 print("=" *30)
 
 ticket_3 = MovieTicket ("Sali", "12 / 25", "35 L")
-ticket_3.add_ticket_nums(1)
+ticket_3.add_ticket_nums(2)
 ticket_3.display() 
        
     
