@@ -1,12 +1,16 @@
-bascket = []
+def user_basket():
+    basket = []
 
-bascket.append("milk")
-bascket.append("bread")
-bascket.append("cheese")
-bascket.append("apple")
+    basket.append("milk")
+    basket.append("bread")
+    basket.append("cheese")
+    basket.append("apple")
 
-print(bascket)
+    print(basket)
 
-bascket.pop()
+    basket.pop()
 
-print(bascket)
+    print(basket)
+
+
+user_basket()
