@@ -1,0 +1,39 @@
+
+import time
+import multiprocessing
+import sys
+
+sys.set_int_max_str_digits(1000000)
+
+
+
+def factorial(n):
+    result = 1
+
+    for i in range(1, n + 1):
+        result = result * i
+
+    return result
+
+start = time.time()
+result = factorial(24599)
+end = time.time()
+
+print(result)
+print(f"Total time taken: {end - start}")
+
+
+if __name__ == "__main__":
+    start = time.time()
+
+    processes = [multiprocessing.Process(target=factorial, args=(24599,)) for _ in range(2)]
+
+    for p in processes:
+        p.start()
+
+    for p in processes:
+        p.join()
+
+    end = time.time()
+        
+    print(f"Total time taken: {end - start}")
